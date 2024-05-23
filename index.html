@@ -55,45 +55,51 @@
             max-width: 150px;
             margin-bottom: 1em;
         }
+        .about {
+            background: #333;
+            color: #fff;
+            padding: 2em;
+            text-align: center;
+        }
         .projects-header {
             text-align: center;
             padding: 1em 0;
-            background: #333;
+            background: #444;
             color: #fff;
         }
         .projects {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            background: #f4f4f4;
+            padding: 2em 0;
         }
         .project {
             background: #fff;
-            margin: 1em 0;
+            margin: 1em;
             padding: 1em;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             flex: 1 1 calc(33% - 2em);
             box-sizing: border-box;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .project h3 {
             margin-top: 0;
         }
         .project p {
-            font-size: 1em;
+            flex-grow: 1;
         }
         .project a {
-            display: inline-block;
             margin-top: 1em;
             background: #333;
             color: #fff;
             padding: 0.5em 1em;
             text-decoration: none;
             border-radius: 5px;
-        }
-        #about {
-            background: #333;
-            color: #fff;
-            padding: 2em;
-            text-align: center;
+            align-self: center;
         }
         #contact {
             background: #f4f4f4;
@@ -128,8 +134,8 @@
         <p>Aspiring Software Developer</p>
         <nav>
             <ul>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -140,9 +146,17 @@
             <h2>Welcome to My Portfolio</h2>
             <p>Explore my projects and experience in software development.</p>
         </section>
-        <section class="projects-header">
-            <h2>Projects</h2>
-        </section>
+    </div>
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a software developer with a passion for creating innovative solutions. With a background in computer science and experience in various programming languages and frameworks, I am dedicated to continuous learning and professional growth.</p>
+        </div>
+    </section>
+    <section class="projects-header">
+        <h2>Projects</h2>
+    </section>
+    <div class="container">
         <section class="projects" id="projects">
             <div class="project">
                 <h3>Final Year Project</h3>
@@ -179,10 +193,6 @@
                 <p>Developed an Android application that searches for news articles using the News API, with keyword and date range filters.</p>
                 <a href="https://github.com/Kevcar98/NewsSearch" target="_blank">View on GitHub</a>
             </div>
-        </section>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a first-class Computer Science graduate from University of Greenwich looking to use my excellent programming and analytical skills. I am a hard worker, reliable, enthusiastic and willing to learn. My knowledge of programming will prepare me for a role within this exciting and challenging technology industry.</p>
         </section>
     </div>
     <section id="contact">
